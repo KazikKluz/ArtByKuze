@@ -1,0 +1,55 @@
+.homepage {
+
+
+  .header {
+    height: 12vh;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .logo-container {
+      display: flex;
+
+      .logo {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 2rem;
+        font-stretch: extra-condensed;
+        padding-top: 1rem;
+        padding-right: 0.3rem;
+      }
+
+      .side-logo {
+        padding-left: 0.3rem;
+        text-align: left;
+        width: 5rem;
+        align-self: center;
+        border-left: solid grey 1.5px;
+        font-size: 0.67rem;
+      }
+    }
+
+    .options {
+
+      display: flex;
+      font-weight: 200;
+
+      .option {
+        align-self: center;
+        padding: 0 0.9rem;
+        font-size: 0.74rem;
+      }
+    }
+  }
+
+  .main {
+
+    background-image: url("https://picsum.photos/1100/999");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 88vh;
+    text-align: center;
+  }
+}
