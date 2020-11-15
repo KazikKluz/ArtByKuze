@@ -2,6 +2,8 @@ import React from "react";
 
 import "./homepage.styles.scss";
 
+import HomeCarousel from "../components/home-carousel/home-carousel.component";
+
 const HomePage = () => (
   <div className="homepage">
     <header className="header">
@@ -20,7 +22,7 @@ const HomePage = () => (
         <div className="option">CONTACT</div>
       </div>
     </header>
-    <div className="main">Whats the story</div>
+    <HomeCarousel />
   </div>
 );
 
