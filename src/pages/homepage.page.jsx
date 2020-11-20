@@ -3,6 +3,7 @@ import React from "react";
 import "./homepage.styles.scss";
 
 import HomeCarousel from "../components/home-carousel/home-carousel.component";
+import SlideShow from "../components/slideshow/slideshow.component";
 
 const HomePage = () => (
   <div className="homepage">
@@ -22,7 +23,7 @@ const HomePage = () => (
         <div className="option">CONTACT</div>
       </div>
     </header>
-    <HomeCarousel />
+    <SlideShow />
   </div>
 );
 
