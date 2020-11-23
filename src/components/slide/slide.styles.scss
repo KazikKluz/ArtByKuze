@@ -2,17 +2,29 @@
   width: 100vw;
   height: 88vh;
   overflow: hidden;
-}
+  }
 
 .backgroundImage {
   width: 100%;
   height: 88vh;
   background-size: cover;
   background-position: top;
+  animation: fade 1.5s;
+  animation: blowUp 6s ease-in-out;
+  animation-fill-mode: forwards;
+}
 
-  &:hover {
+.theShow {
+  display: inline-block;
+}
+
+@keyframes blowUp {
+  100% {
     transform: scale(1.1);
-    transition: transform 6s cubic-bezier(0.25,0.45,0.45,0.95);
-
   }
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

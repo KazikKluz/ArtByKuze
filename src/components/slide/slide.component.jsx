@@ -1,20 +1,22 @@
 import React from "react";
 
-import pic1 from "./1.jpg";
-import pic2 from "./2.jpg";
-import pic3 from "./3.jpg";
-
 import "./slide.styles.scss";
 
-const Slide = ({ picNo }) => (
-  <div className="mySlides fade">
-    <div className="slide">
-      <div
-        className="backgroundImage"
-        style={{ backgroundImage: `url(pic${picNo}})` }}
-      />
+const Slide = ({ picNo, show, id }) => {
+  console.log(show);
+  return (
+    <div
+      style={id === show ? { display: "block" } : { display: "none" }}
+      className="fade"
+    >
+      <div className="slide">
+        <div
+          className="backgroundImage"
+          style={{ backgroundImage: `url(${picNo})` }}
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Slide;
