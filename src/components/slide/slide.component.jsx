@@ -3,7 +3,6 @@ import React from "react";
 import "./slide.styles.scss";
 
 const Slide = ({ picNo, show, id }) => {
-  console.log(show);
   return (
     <div
       style={id === show ? { display: "block" } : { display: "none" }}
