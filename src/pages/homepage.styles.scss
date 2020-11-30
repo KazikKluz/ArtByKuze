@@ -8,25 +8,20 @@
     justify-content: space-between;
 
     .logo-container {
-      display: flex;
+      max-width: 350px;
+      height: auto;
+      flex: 25%;
+
+    }
 
       .logo {
-        font-family: 'Gloria Hallelujah', cursive;
-        font-size: 2rem;
-        padding-top: 1rem;
-        padding-right: 0.4rem;
-        letter-spacing: -2px;
+        padding-right: 0.6rem;
+        max-width: 350px;
+        height: auto;
+        flex: 25%;
+        vertical-align: middle;
       }
 
-      .side-logo {
-        padding-left: 0.3rem;
-        text-align: left;
-        width: 5rem;
-        align-self: center;
-        border-left: solid grey 1.5px;
-        font-size: 0.67rem;
-      }
-    }
 
     .options {
 
@@ -36,7 +31,7 @@
       .option {
         align-self: center;
         padding: 0 0.9rem;
-        font-size: 0.74rem;
+        font-size: 0.9rem;
       }
     }
   }
