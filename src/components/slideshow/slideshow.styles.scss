@@ -1,6 +1,7 @@
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 12vh;
 
   /* Fading animation */
   .fade {
@@ -28,7 +29,7 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 7px 7px 0;
     user-select: none;
   }
 
@@ -49,7 +50,7 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 3px 0 0 3px;
+    border-radius: 7px 0 0 7px;
     user-select: none;
     right: 0;
   }
@@ -74,7 +75,7 @@
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 3px 3px 0  0;
+  border-radius: 7px 7px 0  0;
   user-select: none;
 }
 

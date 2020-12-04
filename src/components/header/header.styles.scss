@@ -1,0 +1,40 @@
+.header {
+  height: 12vh;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  transition: top 0.3s;
+
+  .logo-container {
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+
+  .options {
+
+    display: flex;
+    font-weight: 200;
+
+    .option {
+      align-self: center;
+      padding: 0 0.9rem;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+}
