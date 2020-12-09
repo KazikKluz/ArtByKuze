@@ -4,11 +4,11 @@
   padding: 0 2rem;
   justify-content: space-between;
   position: fixed;
-  top: 0;
+  // top: 0;
   width: 100%;
   background-color: white;
   z-index: 1;
-  transition: top 0.3s;
+  transition: top 0.5s;
 
   .logo-container {
     max-width: 350px;
@@ -16,17 +16,13 @@
     display: flex;
     align-items: center;
 
-
     .logo {
       width: 100%;
       height: auto;
     }
-
   }
 
-
   .options {
-
     display: flex;
     font-weight: 200;
 

@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../../assets/artbyKuzelogo.png";
 import "./header.styles.scss";
 
 const Header = () => {
-  const handleScroll = (e) => {
-    console.log("scroliing");
+  const [visibility, setVisibility] = useState({ top: "0" });
+
+  let prevScrollPos = window.pageYOffset;
+
+  const handleScroll = () => {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      setVisibility({ top: 0 });
+    } else {
+      setVisibility({ top: "-12vh" });
+    }
+    prevScrollPos = currentScrollPos;
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header onScroll={handleScroll} className="header">
+    <header style={visibility} className="header">
       <div className="logo-container">
         <img className="logo" src={Logo} alt="logo" />
       </div>
