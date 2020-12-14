@@ -6,7 +6,7 @@ import pic1 from "../slide/test1.jpg";
 import pic2 from "../slide/test2.jpg";
 import pic3 from "../slide/test3.jpg";
 
-import "./slideshow.styles.scss";
+import { SlideshowContainer, Prev, Next, Down } from "./slideshow.styles.js";
 
 const pictures = [pic1, pic2, pic3];
 
@@ -33,19 +33,15 @@ const SlideShow = () => {
   }, [shiftSlide]);
 
   return (
-    <div className="slideshow-container">
+    <SlideshowContainer>
       {pictures.map((pic, idx) => {
         return <Slide picNo={pic} key={idx} id={idx} show={show} />;
       })}
 
-      <div className="prev" onClick={() => shiftSlide(-1)}>
-        &#9668;
-      </div>
-      <div className="next" onClick={() => shiftSlide(1)}>
-        &#9658;
-      </div>
-      <div className="bottom">&#9660;</div>
-    </div>
+      <Prev onClick={() => shiftSlide(-1)}>&#9668;</Prev>
+      <Next onClick={() => shiftSlide(1)}>&#9658;</Next>
+      <Down>&#9660;</Down>
+    </SlideshowContainer>
   );
 };
 

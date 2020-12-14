@@ -1,16 +1,21 @@
 import React from "react";
 
-import "./blog-card.styles.scss";
+import {
+  TheCard,
+  ImageContainer,
+  Title,
+  PostDate,
+} from "./blog.card.styles.js";
 
 const BlogCard = ({ title, date, imgUrl }) => {
   return (
-    <div className="card">
-      <div className="image-container">
+    <TheCard>
+      <ImageContainer>
         <img alt="" src={imgUrl} />
-      </div>
-      <h3 className="title">{title}</h3>
-      <p className="date">{date}</p>
-    </div>
+      </ImageContainer>
+      <Title>{title}</Title>
+      <PostDate>{date}</PostDate>
+    </TheCard>
   );
 };
 

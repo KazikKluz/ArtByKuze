@@ -1,15 +1,15 @@
 import React from "react";
 
-import "./card.styles.scss";
+import { TheCard, Title, ImageContainer } from "./card.styles.js";
 
 const Card = ({ title, imgUrl }) => {
   return (
-    <div className="card">
-      <h3 className="title">{title}</h3>
-      <div className="image-container">
+    <TheCard>
+      <Title>{title}</Title>
+      <ImageContainer>
         <img alt="" src={imgUrl} />
-      </div>
-    </div>
+      </ImageContainer>
+    </TheCard>
   );
 };
 

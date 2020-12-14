@@ -1,7 +1,16 @@
 import React from "react";
 
+import {
+  MainContainer,
+  CardContainer,
+  BlogSection,
+  Separator,
+  BlogCardContainer,
+} from "./main.styles";
+
 import Card from "../card/card.component";
 import BlogCard from "../blog-card/blog-card.component";
+import CustomButton from "../custom-button/custom-button.component";
 
 let cards = [
   {
@@ -48,25 +57,24 @@ let blogCards = [
   },
 ];
 
-import "./main.styles.scss";
-
 const Main = () => (
-  <div className="main">
-    <div className="container">
+  <MainContainer>
+    <CardContainer>
       {cards.map(({ title, id, imageUrl }) => (
         <Card key={id} title={title} imgUrl={imageUrl} />
       ))}
-    </div>
+    </CardContainer>
 
-    <div className="blog-section">
-      <div className="separator">Popular from the blog</div>
-      <div className="container">
-        {blogCards.map(({ title, id, imageUrl }) => (
-          <BlogCard key={id} title={title} imgUrl={imageUrl} />
+    <BlogSection>
+      <Separator>Popular from the blog</Separator>
+      <BlogCardContainer>
+        {blogCards.map(({ title, id, imageUrl, date }) => (
+          <BlogCard key={id} title={title} imgUrl={imageUrl} date={date} />
         ))}
-      </div>
-    </div>
-  </div>
+      </BlogCardContainer>
+      <CustomButton title="See All" />
+    </BlogSection>
+  </MainContainer>
 );
 
 export default Main;

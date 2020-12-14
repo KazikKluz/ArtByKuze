@@ -1,17 +1,17 @@
 import React from "react";
 
-import "./homepage.styles.scss";
+import { HomepageContainer } from "./homepage.styles.js";
 
 import SlideShow from "../components/slideshow/slideshow.component";
 import Main from "../components/main/main.component";
 import Header from "../components/header/header.component";
 
 const HomePage = () => (
-  <div className="homepage">
+  <HomepageContainer>
     <Header />
     <SlideShow />
     <Main />
-  </div>
+  </HomepageContainer>
 );
 
 export default HomePage;
