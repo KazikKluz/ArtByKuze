@@ -1,16 +1,12 @@
 import React from "react";
 
-import {
-  MainContainer,
-  CardContainer,
-  BlogSection,
-  Separator,
-  BlogCardContainer,
-} from "./main.styles";
+import { MainContainer, CardContainer } from "./main.styles";
 
 import Card from "../card/card.component";
-import BlogCard from "../blog-card/blog-card.component";
-import CustomButton from "../custom-button/custom-button.component";
+import BlogSection from "../blog-section/blog-section.component";
+import Testimonials from "../testimonials/testimonials.component";
+import Cta from "../cta/cta.component";
+import Footer from "../footer/footer.component";
 
 let cards = [
   {
@@ -33,30 +29,6 @@ let cards = [
   },
 ];
 
-let blogCards = [
-  {
-    title: "Kuze's Drawings",
-    imageUrl: "https://picsum.photos/702",
-    id: 1,
-    linkUrl: "shop/hats",
-    date: "13/12/1980",
-  },
-  {
-    title: "Available Paintings",
-    imageUrl: "https://picsum.photos/703",
-    id: 2,
-    linkUrl: "shop/jackets",
-    date: "14/1/1789",
-  },
-  {
-    title: "Prints",
-    imageUrl: "https://picsum.photos/704",
-    id: 3,
-    linkUrl: "shop/sneakers",
-    date: "7/5/1410",
-  },
-];
-
 const Main = () => (
   <MainContainer>
     <CardContainer>
@@ -64,16 +36,10 @@ const Main = () => (
         <Card key={id} title={title} imgUrl={imageUrl} />
       ))}
     </CardContainer>
-
-    <BlogSection>
-      <Separator>Popular from the blog</Separator>
-      <BlogCardContainer>
-        {blogCards.map(({ title, id, imageUrl, date }) => (
-          <BlogCard key={id} title={title} imgUrl={imageUrl} date={date} />
-        ))}
-      </BlogCardContainer>
-      <CustomButton title="See All" />
-    </BlogSection>
+    <BlogSection />
+    <Testimonials />
+    <Cta />
+    <Footer />
   </MainContainer>
 );
 

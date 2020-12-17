@@ -17,7 +17,7 @@ export const ImageContainer = styled.div`
   margin-top: 35px;
   margin-bottom: auto;
   border: 2px solid #fff;
-  box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 20px #857e7b;
   img {
     width: 100%;
     height: 100%;

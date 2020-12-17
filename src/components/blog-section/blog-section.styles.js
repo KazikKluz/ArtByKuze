@@ -1,24 +1,19 @@
 import styled, { css } from "styled-components";
 
-export const MainContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-`;
-
 const Container = css`
   padding: 70px;
   max-height: 490px;
   max-width: 1190px;
-  margin: 120px auto;
+  margin: 80px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 45px;
 `;
 
-export const CardContainer = styled.div`
-  ${Container}
+export const BlogPart = styled.div`
+  background-color: #f7f7f7;
+  text-align: center;
 `;
 
 export const Separator = styled.div`
@@ -43,4 +38,8 @@ export const Separator = styled.div`
   &::after {
     margin-left: 1rem;
   }
+`;
+
+export const BlogCardContainer = styled.div`
+  ${Container}
 `;

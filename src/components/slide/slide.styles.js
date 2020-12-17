@@ -14,10 +14,14 @@ export const Background = styled.div`
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: top;
+  //background-position: top;
   animation: fade 1.5s;
   animation: blowUp 8s ease-in-out;
   animation-fill-mode: forwards;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @keyframes blowUp {
     100% {
