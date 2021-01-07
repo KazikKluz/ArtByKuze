@@ -8,7 +8,7 @@ export const TheButton = styled.a`
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
-  background-color: #857e7b;
+  background-color: #d81e5b;
   color: white;
   margin-bottom: 100px;
   animation: ${(props) =>
@@ -48,7 +48,7 @@ export const TheButton = styled.a`
     left: 0;
     z-index: -1;
     transition: all 0.3s;
-    background-color: #857e7b;
+    background-color: #d81e5b;
   }
 
   &:hover::after {

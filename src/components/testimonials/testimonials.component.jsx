@@ -1,9 +1,8 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 
-import "./testimonials.scss";
-
-import { Hero } from "./testimonials.styles.js";
+import { Hero, ImageContainer } from "./testimonials.styles.js";
+import Image from "../../assets/testim.jpg";
 
 export default function Testimonials() {
   const [offset, setOffset] = useState(0);
@@ -17,21 +16,20 @@ export default function Testimonials() {
     };
   }, []);
   return (
-    <div>
-      <Hero>
-        <img
-          src="https://picsum.photos/1600/1900"
-          alt="test"
-          className="parallax"
-          style={{
-            transform: `translateY(${offset * 0.5}px)`,
-          }}
-        />
-        <div className="text-wrapper">
-          <h1 className="headline">Parallax</h1>
-          <h2 className="sub-headline">Scrolling effect</h2>
-        </div>
-      </Hero>
-    </div>
+    <Hero>
+      <ImageContainer
+        src={Image}
+        alt="test"
+        width="2173px"
+        style={{
+          transform: `translateY(${offset * 0.5 - 1600}px)`,
+        }}
+      />
+    </Hero>
   );
 }
+
+// <div className="text-wrapper">
+//           <h1 className="headline">Parallax</h1>
+//           <h2 className="sub-headline">Scrolling effect</h2>
+//         </div>
