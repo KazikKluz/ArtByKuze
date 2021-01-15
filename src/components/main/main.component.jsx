@@ -7,6 +7,7 @@ import BlogSection from "../blog-section/blog-section.component";
 import Testimonials from "../testimonials/testimonials.component";
 import Cta from "../cta/cta.component";
 import Footer from "../footer/footer.component";
+import SocialButtons from "./socialButtons"
 
 let cards = [
   {
@@ -36,6 +37,7 @@ const Main = () => (
         <Card key={id} title={title} imgUrl={imageUrl} />
       ))}
     </CardContainer>
+    <SocialButtons />
     <BlogSection />
     <Testimonials />
     <Cta />

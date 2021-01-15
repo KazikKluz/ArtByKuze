@@ -29,7 +29,3 @@ export default function Testimonials() {
   );
 }
 
-// <div className="text-wrapper">
-//           <h1 className="headline">Parallax</h1>
-//           <h2 className="sub-headline">Scrolling effect</h2>
-//         </div>

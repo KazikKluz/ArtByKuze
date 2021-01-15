@@ -14,7 +14,8 @@ export const Container = styled.div`
 export const InnerBox = styled.div`
   width: 300px;
   height: 500px;
-  padding-right: 50px;
+  padding-top: 80px;
+  padding-right: 80px;
   transform: translateX(50px);
 `;
 

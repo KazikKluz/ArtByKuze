@@ -18,6 +18,7 @@ export const LogoContainer = styled.div`
   height: auto;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const LogoImage = styled.img`
@@ -28,6 +29,7 @@ export const LogoImage = styled.img`
 export const Options = styled.div`
   display: flex;
   font-weight: 200;
+  cursor: pointer;
 `;
 
 export const Option = styled.div`
@@ -35,4 +37,8 @@ export const Option = styled.div`
   padding: 0 0.9rem;
   font-size: 0.9rem;
   width: 100%;
+
+  &:hover{
+    color: #d81e5b;
+  }
 `;
